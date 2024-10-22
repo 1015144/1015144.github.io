@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 50%;
+            margin-left: 25%;
+        }
+        td, table, th {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        #name {
+            text-align: center;
+        }
+        #school {
+            text-align: center;
+        }
+        #date {
+            text-align: center;
+        }
+        .label {
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        h1 {
+            font-size: 3em;
+        }
+        h1, h2 {
+            margin-top: 5px;
+        }
+        #table {
+            width: 50%;
+            margin-left: 25%;
+            display: grid;
+            grid-template-columns: 10% calc(90%/2) calc(90%/2);
+            border: 1px solid black;
+        }
+        #table span {
+            text-align: center;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .header {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <p class="label">Name</p>
+    <h1 id="name">Julian Sandberg</h1>
+    <p class="label">School</p>
+    <h2 id="school">Washington-Liberty HS</h2>
+    <p class="label">Date</p>
+    <h2 id="date">October 16th, 2024</h6>
+    <div id="table">
+        <span class="header">ID</span>
+        <span class="header">Name</span>
+        <span class="header">Price</span>
+    
+        <span>1</span>
+        <span>Banana</span>
+        <span>$4.99</span>
+    
+        <span>2</span>
+        <span>Orange</span>
+        <span>$7.29</span>
+    </div>
+</body>
+</html>
