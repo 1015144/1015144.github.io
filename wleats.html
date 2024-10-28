@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+        }
+        form {
+            width: 50%;
+            margin-left: 25%;
+            height: 90%;
+            margin-top: 5%;
+        }
+        input {
+            padding: 10px;
+        }
+        input, label {
+            font-size: 1.5em;
+        }
+        #submit {
+            grid-column: 1 / 3;
+        }
+        .nav {
+            grid-column: 1 / 3;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            margin-left: calc(75%/2);
+            margin-top: 5%;
+        }
+        .nav span {
+            font-size: 2em;
+            user-select: none;
+        }
+        .nav span:hover {
+            cursor: pointer
+        }
+        .page {
+            display: grid;
+            grid-template-columns: 30% 70%;
+            row-gap: 1em;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" action="recieveform.html">
+        <div id="pg1" style="display: grid" class="page">
+            <div class="nav"><span></span><span onclick="page2()">➡️</span></div>
+            <label>Email:</label>
+            <input type="text" name="email">
+            <label>Grade:</label>
+            <input type="number" name="grade">
+        </div>
+        <div id="pg2" style="display: none" class="page">
+            <div class="nav"><span onclick="page1()">⬅️</span><span onclick="page3()">➡️</span></div>
+            <label>Username:</label>
+            <input type="text" name="name">
+            <label>Password:</label>
+            <input type="password" name="password">
+            <label>Confirm password:</label>
+            <input type="password" name="cpassword">
+        </div>
+        <div id="pg3" style="display: none;" class="page">
+            <div class="nav"><span onclick="page2()">⬅️</span><span></span></div>
+            <label>Referral code:</label>
+            <input type="number" name="refcode">
+            <input type="submit" name="submit" id="submit">
+        </div>
+    </form>
+    <script defer>
+        p1 = document.getElementById("pg1")
+        p2 = document.getElementById("pg2")
+        p3 = document.getElementById("pg3")
+        function page1() {
+            p1.style.display = "grid"
+            p2.style.display = "none"
+            p3.style.display = "none"
+        }
+        function page2() {
+            p1.style.display = "none"
+            p2.style.display = "grid"
+            p3.style.display = "none"
+        }
+        function page3() {
+            p1.style.display = "none"
+            p2.style.display = "none"
+            p3.style.display = "grid"
+        }
+    </script>
+</body>
+</html>
