@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Stock</title>
+    <style>
+        body {
+            font-family: helvetica;
+            background-color: lightblue;
+        }
+        #head {
+            text-align: center;
+        }
+        #cars {
+            width: 100%;
+        }
+        #cars, #cars td, #cars th {
+            border: 3px solid green;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        #cars td, #cars th {
+            width: calc(100%/7);
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        #motorbikes {
+            width: 100%;
+            border: 10px double red;
+            border-collapse: collapse;
+            text-align: center;
+            margin-top: 5%;
+        }
+        #motorbikes td, #motorbikes th {
+            width: calc(100%/7);
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border: 5px solid red;
+        }
+        .table-head {
+            font-size: 1.5em;
+        }
+        #contact-btn {
+            display: block;
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            text-decoration: none;
+            color: yellow;
+            -webkit-text-stroke: 1px black;
+        }
+    </style>
+</head>
+<body>
+    </pre>
+    <h1 id="head">Vehicle Stock</h1>
+    <a href="buy.html" id="contact-btn">Contact Us</a>
+    <table id="cars">
+        <tr class="table-head-row">
+            <th class="table-head" colspan="7">Cars</th>
+        </tr>
+        <tr class="headers">
+            <th>Make</th>
+            <th>Model</th>
+            <th>Model code</th>
+            <th>Year</th>
+            <th>Body style</th>
+            <th>Engine</th>
+            <th>Quantity</th>
+        </tr>
+        <tr class="listing">
+            <td>Nissan</td>
+            <td>Skyline GT-R</td>
+            <td>R34</td>
+            <td>2002</td>
+            <td>2-door coupé</td>
+            <td>2.6L twin-turbocharged I6</td>
+            <td>2</td>
+        </tr>
+        <tr class="listing">
+            <td>Honda</td>
+            <td>Odyssey</td>
+            <td>RL-6</td>
+            <td>2018</td>
+            <td>5-door minivan</td>
+            <td>3.5L V6</td>
+            <td>5</td>
+        </tr>
+        <tr class="listing">
+            <td>Toyota</td>
+            <td>Corolla</td>
+            <td>E210</td>
+            <td>2019</td>
+            <td>4-door sedan</td>
+            <td>2L I4</td>
+            <td>13</td>
+        </tr>
+        <tr class="listing">
+            <td>Jeep</td>
+            <td>Wrangler</td>
+            <td>JL</td>
+            <td>2017</td>
+            <td>4-door SUV</td>
+            <td>3.6L V6</td>
+            <td>1</td>
+        </tr>
+        <tr class="listing">
+            <td>Toyota</td>
+            <td>Prius V</td>
+            <td>XW40</td>
+            <td>2015</td>
+            <td>5-door wagon</td>
+            <td>1.8L I4</td>
+            <td>4</td>
+        </tr>
+    </table>
+    <table id="motorbikes">
+        <tr class="table-head-row">
+            <th class="table-head" colspan="7">Motorcycles</th>
+        </tr>
+        <tr class="headers">
+            <th>Make</th>
+            <th>Model</th>
+            <th>Year</th>
+            <th>Class</th>
+            <th>Top speed</th>
+            <th>Engine</th>
+            <th>Quantity</th>
+        </tr>
+        <tr class="listing">
+            <td>Kowasaki</td>
+            <td>Ninja</td>
+            <td>2016</td>
+            <td>Street-legal sport bike</td>
+            <td>200 mph</td>
+            <td>Supercharged inline-4</td>
+            <td>2</td>
+        </tr>
+        <tr class="listing">
+            <td>Aprilia</td>
+            <td>RS660</td>
+            <td>2020</td>
+            <td>Street-legal sport bike</td>
+            <td>148 mph</td>
+            <td>Liquid-cooled parallel-twin</td>
+            <td>1</td>
+        </tr>
+        <tr class="listing">
+            <td>Yamaha</td>
+            <td>MT-09</td>
+            <td>2017</td>
+            <td>Street-legal sport bike</td>
+            <td>145 mph</td>
+            <td>Liquid-cooled inline-3</td>
+            <td>4</td>
+        </tr>
+        <tr class="listing">
+            <td>BMW</td>
+            <td>F900R</td>
+            <td>2019</td>
+            <td>Standard</td>
+            <td>124 mph</td>
+            <td>Liquid-cooled 2 cylinder</td>
+            <td>7</td>
+        </tr>
+        <tr class="listing">
+            <td>Ducati</td>
+            <td>Multistrada</td>
+            <td>2018</td>
+            <td>Adventure touring</td>
+            <td>145 mph</td>
+            <td>Liquid-cooled L-twin</td>
+            <td>1</td>
+        </tr>
+    </table>
+</body>
+</html>

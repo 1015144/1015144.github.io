@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: lightgreen;
+        }
+        form {
+            width: 50%;
+            margin-left: 25%;
+            height: 50vh;
+            margin-top: 23vh;
+            font-family: arial;
+            background-color: lightblue;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 1em 1em .4em gray;
+        }
+        div {
+            display: grid;
+            grid-template-columns: 100%;
+            row-gap: 1em;
+        }
+        input {
+            padding: 5px;
+        }
+        input, label {
+            font-size: 1.1em;
+            margin: 0;
+        }
+        #submit {
+            background-color: gold;
+            border: none;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="index.html" method="post">
+        <a href="index.html">Back to home</a>
+        <div id="d1">
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" required>
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" required>
+            <label for="cscore">Credit score:</label>
+            <input type="number" name="cscore" id="cscore" required>
+            <label for="addr">Address:</label>
+            <input type="text" name="addr" id="asddr" required>
+            <input type="submit" name="submit" id="submit">
+    </form>
+</body>
+</html>
